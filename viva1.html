@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER's PROFILE</title>
+    <style>
+        body{
+        background-color: lightblue;
+        text-align: left;
+    }
+        h1{
+        color:navy;
+        margin:20px;
+        text-align: center;
+        font-style: oblique;
+        border: groove 10px ;
+        text-shadow: 5px 5px white;
+    }
+        input{
+        border: outset;
+        border-radius: 20px;
+    }
+        textarea{
+        border: outset;
+        border-radius: 20px;
+    }
+        </style>
+</head>
+<body>
+    <fieldset>
+        <h1>CUSTOMER'S PROFILE IN HOTEL MANAGEMENT</h1>
+    <form action="post">
+        NAME:<input type="text" name="c_name" placeholder="Enter your name" required><br><br>
+
+        ADDRESS:<textarea rows="4" cols="40" placeholder="Enter Your Full Address" required></textarea><br> <br>
+
+        Age:<input type="number" name="c_age" placeholder="Enter your age" required><br><br>
+
+        GENDER:<input type="radio"  name="gender" value="Male" required>Male
+        <input type="radio"  name="gender" value="Female" required>Female<br><br>
+
+        Room Type:<input type="radio" name="r_type" value="A/C" required>A/C
+        <input type="radio" name="r_type" value="Non A/C" required>Non A/C
+        <input type="radio" name="r_type" value="Deluxe" required>Deluxe<br><br>
+        
+        Type Of Payment:<input type="radio" name="Payment" value="Cash" required>Cash
+        <input type="radio" name="Payment" value="Credit/Debit Card" required>Credit/Debit Card
+        <input type="radio" name="Payment" value="Coupons" required>Coupons<br><br>
+        <input type="button" name="submit" value="submit"> 
+    </form>
+</fieldset>
+</body>
+</html>
